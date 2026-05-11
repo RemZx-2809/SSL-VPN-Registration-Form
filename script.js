@@ -8,7 +8,7 @@
  *  - Request OTP via Google Apps Script backend
  *  - 6-digit OTP input boxes with auto-advance
  *  - Verify OTP via backend
- *  - Resend OTP with 90-second cooldown
+ *  - Resend OTP with 5-minute cooldown
  *  - Form submission & navigation to Step 2
  * ============================================================
  */
@@ -25,7 +25,7 @@
   /* -------------------------------------------------------
      Constants
      ------------------------------------------------------- */
-  const RESEND_COOLDOWN = 90; // seconds between resend attempts
+  const RESEND_COOLDOWN = 300; // seconds between resend attempts
 
   /* -------------------------------------------------------
      DOM References

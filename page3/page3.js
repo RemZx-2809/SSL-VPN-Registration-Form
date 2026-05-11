@@ -40,7 +40,7 @@
      Guard: Ensure Steps 1 & 2 were completed
      ------------------------------------------------------- */
   if (!localStorage.getItem('sslvpn_step1') || !localStorage.getItem('sslvpn_step2')) {
-    window.location.href = !localStorage.getItem('sslvpn_step1') ? '../index.html' : '../page2/page2.html';
+    window.location.href = !localStorage.getItem('sslvpn_step1') ? '../' : '../page2/';
   }
 
   /* -------------------------------------------------------
@@ -80,7 +80,7 @@
      Back Button — Navigate to Step 2
      ------------------------------------------------------- */
   backBtn.addEventListener('click', () => {
-    window.location.href = '../page2/page2.html';
+    window.location.href = '../page2/';
   });
 
   /* -------------------------------------------------------
@@ -286,7 +286,7 @@
   // Success — Done button: redirect to start
   modalCloseBtn.addEventListener('click', () => {
     hideModal();
-    window.location.href = '../index.html';
+    window.location.href = '../';
   });
 
   // Error — Close button

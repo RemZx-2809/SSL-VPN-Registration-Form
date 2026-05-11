@@ -647,7 +647,7 @@
     localStorage.setItem('sslvpn_step1', JSON.stringify(formData));
 
     // Navigate to Step 2
-    window.location.href = 'page2/page2.html';
+    window.location.href = 'page2/';
   });
 
   /* -------------------------------------------------------

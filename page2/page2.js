@@ -21,7 +21,7 @@
      If no Step 1 data in localStorage, redirect back.
      ------------------------------------------------------- */
   if (!localStorage.getItem('sslvpn_step1')) {
-    window.location.href = '../index.html';
+    window.location.href = '../';
   }
 
   /* -------------------------------------------------------
@@ -100,7 +100,7 @@
     localStorage.setItem('sslvpn_step2', JSON.stringify(consentData));
 
     // Navigate to Step 3
-    window.location.href = '../page3/page3.html';
+    window.location.href = '../page3/';
   });
 
   /* -------------------------------------------------------
